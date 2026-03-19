@@ -1,0 +1,43 @@
+[
+  {
+    "id": "data-science",
+    "lessons": [
+      {
+        "id": "01-python-basics",
+        "title": "Python Basics",
+        "duration": "1-2 hours",
+        "video": "https://www.youtube.com/embed/rfscVS0vtbw",
+        "content": "\n# Python Basics\n\nBuild a foundation in Python.\n\n## Learn\nWatch the video above to learn the basics.\n\n## Quiz\n**What is the difference between lists and tuples?**\n- **Lists**: Mutable (can change), slower, `[1, 2, 3]`\n- **Tuples**: Immutable (cannot change), faster, `(1, 2, 3)`\n\n**Is Python case-sensitive?**\nYes.\n"
+      },
+      {
+        "id": "02-visualization",
+        "title": "Visualization",
+        "duration": "1-2 hours",
+        "video": "https://www.youtube.com/embed/hSPmj7mK6ng",
+        "content": "\n# Visualization\n\nLearn how to visualize data with Plotly.\n\n## Learn\nWatch the video above to learn about Plotly.\n\n## Code Example\n```python\nimport plotly.express as px\ndata_canada = px.data.gapminder().query(\"country == 'Canada'\")\nfig = px.bar(data_canada, x='year', y='pop')\nfig.show()\n```\n\n## Quiz\n**When is a heatmap useful?**\nHeatmaps are useful for visualizing the intensity or frequency of values across two dimensions.\n"
+      },
+      {
+        "id": "03-statistics",
+        "title": "Statistics",
+        "duration": "1-2 hours",
+        "content": "\n# Statistics\n\nIntroduction to statistics for data science.\n\n## Learn\nThe general form of the **normal** probability density function is:\n\n$$\nf(x) = \\frac{1}{\\sigma \\sqrt{2\\pi} } e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}\n$$\n\n> [!NOTE]\n> The parameter $\\mu$ is the mean or expectation of the distribution. $\\sigma$ is its standard deviation.\n\n## Quiz\n**What is the parameter $\\mu$?**\nThe parameter $\\mu$ is the mean or expectation of the distribution.\n"
+      }
+    ],
+    "title": "Statistics",
+    "description": "Master the fundamentals of data science with our comprehensive curriculum.",
+    "image": "/media/ds-premium.png",
+    "modules": "",
+    "- id": "stats",
+    "content": "\n# Data Science Course\nWelcome to the Data Science course. Explore the modules in the sidebar to get started.\n"
+  },
+  {
+    "id": "robotics",
+    "lessons": [],
+    "title": "Motion Planning",
+    "description": "From sensors to AI, learn the core principles of modern robotics.",
+    "image": "/media/rb-premium.png",
+    "modules": "",
+    "- id": "motion-planning",
+    "content": "\n# Robotics Course\nDive into the world of robotics. Explore our modules to start building.\n"
+  }
+]
