@@ -19,5 +19,5 @@ fig.show()
 ```
 
 ## Quiz
-**When is a heatmap useful?**
-Heatmaps are useful for visualizing the intensity or frequency of values across two dimensions.
+> [!QUIZ] When is a heatmap useful?
+> Heatmaps are useful for visualizing the intensity or frequency of values across two dimensions.

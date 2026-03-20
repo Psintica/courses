@@ -11,9 +11,10 @@ Build a foundation in Python.
 Watch the video above to learn the basics.
 
 ## Quiz
-**What is the difference between lists and tuples?**
-- **Lists**: Mutable (can change), slower, `[1, 2, 3]`
-- **Tuples**: Immutable (cannot change), faster, `(1, 2, 3)`
+## Quiz
+> [!QUIZ] What is the difference between lists and tuples?
+> - **Lists**: Mutable (can change), faster, `[1, 2, 3]`
+> - **Tuples**: Immutable (cannot change), faster, `(1, 2, 3)`
 
-**Is Python case-sensitive?**
-Yes.
+> [!QUIZ] Is Python case-sensitive?
+> Yes.

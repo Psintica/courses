@@ -1,8 +1,8 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { getCourses } from '../data/contentService';
 import CourseCard from './CourseCard';
 
-const CourseList = ({ onSelectCourse }) => {
+const CourseList = () => {
   const courses = getCourses();
 
   return (
@@ -13,9 +13,9 @@ const CourseList = ({ onSelectCourse }) => {
         </h2>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '2rem' }}>
           {courses.map(course => (
-            <div key={course.id} onClick={() => onSelectCourse(course.id)} style={{ cursor: 'pointer' }}>
+            <Link key={course.id} to={`/course/${course.id}`} style={{ textDecoration: 'none' }}>
               <CourseCard course={course} />
-            </div>
+            </Link>
           ))}
         </div>
       </div>

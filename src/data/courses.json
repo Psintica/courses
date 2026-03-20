@@ -7,20 +7,20 @@
         "title": "Python Basics",
         "duration": "1-2 hours",
         "video": "https://www.youtube.com/embed/rfscVS0vtbw",
-        "content": "\n# Python Basics\n\nBuild a foundation in Python.\n\n## Learn\nWatch the video above to learn the basics.\n\n## Quiz\n**What is the difference between lists and tuples?**\n- **Lists**: Mutable (can change), slower, `[1, 2, 3]`\n- **Tuples**: Immutable (cannot change), faster, `(1, 2, 3)`\n\n**Is Python case-sensitive?**\nYes.\n"
+        "content": "\n# Python Basics\n\nBuild a foundation in Python.\n\n## Learn\nWatch the video above to learn the basics.\n\n## Quiz\n## Quiz\n> [!QUIZ] What is the difference between lists and tuples?\n> - **Lists**: Mutable (can change), faster, `[1, 2, 3]`\n> - **Tuples**: Immutable (cannot change), faster, `(1, 2, 3)`\n\n> [!QUIZ] Is Python case-sensitive?\n> Yes.\n"
       },
       {
         "id": "02-visualization",
         "title": "Visualization",
         "duration": "1-2 hours",
         "video": "https://www.youtube.com/embed/hSPmj7mK6ng",
-        "content": "\n# Visualization\n\nLearn how to visualize data with Plotly.\n\n## Learn\nWatch the video above to learn about Plotly.\n\n## Code Example\n```python\nimport plotly.express as px\ndata_canada = px.data.gapminder().query(\"country == 'Canada'\")\nfig = px.bar(data_canada, x='year', y='pop')\nfig.show()\n```\n\n## Quiz\n**When is a heatmap useful?**\nHeatmaps are useful for visualizing the intensity or frequency of values across two dimensions.\n"
+        "content": "\n# Visualization\n\nLearn how to visualize data with Plotly.\n\n## Learn\nWatch the video above to learn about Plotly.\n\n## Code Example\n```python\nimport plotly.express as px\ndata_canada = px.data.gapminder().query(\"country == 'Canada'\")\nfig = px.bar(data_canada, x='year', y='pop')\nfig.show()\n```\n\n## Quiz\n> [!QUIZ] When is a heatmap useful?\n> Heatmaps are useful for visualizing the intensity or frequency of values across two dimensions.\n"
       },
       {
         "id": "03-statistics",
         "title": "Statistics",
         "duration": "1-2 hours",
-        "content": "\n# Statistics\n\nIntroduction to statistics for data science.\n\n## Learn\nThe general form of the **normal** probability density function is:\n\n$$\nf(x) = \\frac{1}{\\sigma \\sqrt{2\\pi} } e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}\n$$\n\n> [!NOTE]\n> The parameter $\\mu$ is the mean or expectation of the distribution. $\\sigma$ is its standard deviation.\n\n## Quiz\n**What is the parameter $\\mu$?**\nThe parameter $\\mu$ is the mean or expectation of the distribution.\n"
+        "content": "\n# Statistics\n\nIntroduction to statistics for data science.\n\n## Learn\nThe general form of the **normal** probability density function is:\n\n$$\nf(x) = \\frac{1}{\\sigma \\sqrt{2\\pi} } e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}\n$$\n\n> [!NOTE]\n> The parameter $\\mu$ is the mean or expectation of the distribution. $\\sigma$ is its standard deviation.\n\n## Quiz\n> [!QUIZ] What is the parameter $\\mu$?\n> The parameter $\\mu$ is the mean or expectation of the distribution.\n"
       }
     ],
     "title": "Statistics",

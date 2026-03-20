@@ -135,3 +135,96 @@ article blockquote { border-left: 4px solid var(--primary); padding-left: 1.5rem
   0% { transform: perspective(500px) rotateX(60deg) translateY(0); }
   100% { transform: perspective(500px) rotateX(60deg) translateY(-50px); }
 }
+
+/* Alerts and Callouts */
+.markdown-alert p:first-of-type::before {
+  content: 'ⓘ';
+  font-size: 1.2rem;
+}
+
+/* Fix KaTeX double rendering */
+.katex-mathml {
+  display: none !important;
+}
+
+.katex-display {
+  margin: 1.5rem 0 !important;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-alert {
+  padding: 1.25rem 1.5rem;
+  border-left: 4px solid var(--primary);
+  background: rgba(147, 51, 234, 0.05);
+  border-radius: 12px;
+  margin: 1.5rem 0;
+}
+
+.markdown-alert .alert-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary-glow);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+}
+
+.markdown-alert p {
+  margin-bottom: 0;
+  color: var(--text-main);
+  font-style: normal;
+}
+
+/* Interactive Quizzes (Details/Summary) */
+details.quiz-block {
+  margin: 1.5rem 0;
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  background: var(--glass);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+details.quiz-block summary {
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+details.quiz-block summary .reveal-badge {
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--primary);
+  border-radius: 20px;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+details.quiz-block[open] summary .reveal-badge {
+  background: var(--glass-border);
+  opacity: 0.7;
+  transform: scale(0.95);
+}
+
+details.quiz-block summary::after {
+  display: none;
+}
+
+details.quiz-block .quiz-answer {
+  padding: 1.5rem;
+  border-top: 1px solid var(--glass-border);
+  background: rgba(255, 255, 255, 0.02);
+  animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

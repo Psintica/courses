@@ -1,9 +1,18 @@
 import React from 'react'
-import ReactDOM from 'react-dom/client'
+import { createRoot } from 'react-dom/client'
+import './styles/index.css'
+import 'katex/dist/katex.min.css'
 import App from './App.jsx'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+import { BrowserRouter } from 'react-router-dom'
+import { HelmetProvider } from 'react-helmet-async'
+
+createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <HelmetProvider>
+      <BrowserRouter basename="/courses">
+        <App />
+      </BrowserRouter>
+    </HelmetProvider>
   </React.StrictMode>,
 )

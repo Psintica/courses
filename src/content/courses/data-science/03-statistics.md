@@ -17,5 +17,5 @@ $$
 > The parameter $\mu$ is the mean or expectation of the distribution. $\sigma$ is its standard deviation.
 
 ## Quiz
-**What is the parameter $\mu$?**
-The parameter $\mu$ is the mean or expectation of the distribution.
+> [!QUIZ] What is the parameter $\mu$?
+> The parameter $\mu$ is the mean or expectation of the distribution.
